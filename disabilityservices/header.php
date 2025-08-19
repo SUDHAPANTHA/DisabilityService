@@ -29,7 +29,6 @@
             <!-- Logo -->
             <a href="<?php echo home_url(); ?>" class="flex items-center space-x-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/disability-services_logo.png" alt="Qlinest Logo" class="h-8">
-                <span class="font-bold text-lg text-[#1E73BE]">Qlinest</span>
             </a>
 
             <!-- Menu -->
@@ -44,8 +43,8 @@
 
             <!-- Contact Button -->
             <a href="#contact" class="bg-green-500 text-white px-5 py-2 rounded-full font-medium hover:bg-yellow-400 hover:text-green-500 transition">
-    Contact Us
-</a>
+             Contact Us
+            </a>
 
         </nav>
     </div>
@@ -57,21 +56,18 @@
         <div class="lg:w-1/2">
             <span class="bg-white/20 px-4 py-1 rounded-full text-sm">A Cleaner Home, A Happier You</span>
            <h1 class="mt-6 text-4xl lg:text-5xl font-extrabold leading-tight">
-    <span class="text-sky-300">Empowering Lives</span><br>
-    Start With <span class="text-white">Care & Support</span>
-</h1>
-       <p class="mt-6 text-white/80 max-w-md">
-         We provide compassionate, reliable, and personalized disability support services designed to enhance independence, well-being, and quality of life.
-        </p>
-
-
+                  <span class="text-sky-300">Empowering Lives</span><br>
+                  Start With <span class="text-white">Care & Support</span>
+           </h1>
+            <p class="mt-6 text-white/80 max-w-md">
+             We provide compassionate, reliable, and personalized disability support services designed to enhance independence, well-being, and quality of life.
+            </p>
             <div class="mt-8 flex items-center gap-4 flex-wrap">
-            <a href="#book" 
+               <a href="#book" 
                    class="bg-green-700 text-[#1E73BE] px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">
                    Book Now
-              </a>
-              
-                    Explore Services
+               </a>
+              Explore Services
             </div>
         </div>
 
@@ -79,12 +75,12 @@
         
         
         <div class="lg:w-1/2 flex justify-center">
-        <div class="bg-gray-100 p-4 rounded-2xl">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/dis.jpg" 
-             alt="Cleaning Team" 
-             class="rounded-2xl shadow-lg max-w-md w-full">
-    </div>
-</div>
+         <div class="bg-gray-100 p-4 rounded-2xl">
+               <img src="<?php echo get_template_directory_uri(); ?>/images/dis.jpg" 
+               alt="Cleaning Team" 
+               class="rounded-2xl shadow-lg max-w-md w-full">
+         </div>
+        </div>
 
     </div>
 
