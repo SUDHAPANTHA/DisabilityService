@@ -24,7 +24,7 @@
     box-shadow: 0 4px 12px rgba(49, 183, 68, 0.3);
   }
 </style>
-<section class="about-section">
+<section class="about-section" id="about">
   <!-- Decorative circles -->
   <div class="absolute -top-10 -left-10 w-40 h-40 bg-green-300 rounded-full opacity-20 blur-2xl"></div>
   <div class="absolute bottom-0 right-0 w-56 h-56 bg-green-400 rounded-full opacity-20 blur-3xl"></div>
