@@ -13,7 +13,7 @@
   }
   .about-badge {
     display: inline-block;
-    background: linear-gradient(90deg, #31B744, #2a9d8f); /* gradient green-teal */
+    background: linear-gradient(90deg, #31B744, #2a9d8f);
     color: #fff;
     font-size: 0.75rem;
     font-weight: 600;

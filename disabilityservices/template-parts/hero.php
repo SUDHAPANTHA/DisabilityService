@@ -18,20 +18,19 @@
         
         <!-- Text -->
         <div class="lg:w-1/2">
-            <span class="bg-white/20 px-4 py-1 rounded-full text-sm">A Cleaner Home, A Happier You</span>
            <h1 class="mt-6 text-4xl lg:text-5xl font-extrabold leading-tight">
-                  <span class="text-sky-300">Empowering Lives</span><br>
-                  Start With <span class="text-white">Care & Support</span>
+                  <span class="text-white">Disability Service</span><br>
+                   <span class="text-white py-4">Adelaide</span>
            </h1>
-            <p class="mt-6 text-white/80 max-w-md">
-             We provide compassionate, reliable, and personalized disability support services designed to enhance independence, well-being, and quality of life.
+            <p class="mt-6 text-white/80 max-w-md text-justify">
+            Our well-trained professionals are dedicated to providing the best care and support for individuals with disabilities. We focus on enhancing quality of life through personalized services, community engagement, and a commitment to excellence.
             </p>
             <div class="mt-8 flex items-center gap-4 flex-wrap">
                <a href="#book" 
                    class="bg-green-700 text-[#1E73BE] px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">
-                   Book Now
+                Explore Our Services
                </a>
-              Explore Services
+    
             </div>
         </div>
 

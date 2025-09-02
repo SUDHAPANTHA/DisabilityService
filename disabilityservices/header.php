@@ -13,12 +13,11 @@
             background-size: 60px 60px;
         }
     </style>
-   
 </head>
 <body <?php body_class(); ?>>
  <!-- Navigation Bar -->
-    <div class=" pattern-bg pt-12 relative z-20">
-       <nav class="bg-white backdrop-blur-md shadow-lg px-8 py-4 flex items-center justify-between w-full max-w-6xl mx-auto rounded-l-xl rounded-r-xl border border-gray-200">
+    <div class=" pattern-bg pt-8 relative z-20">
+        <nav class="bg-white backdrop-blur-md shadow-lg px-8 py-4 flex items-center justify-between w-full max-w-6xl mx-auto rounded-l-lg rounded-r-lg border border-gray-200">
             <!-- Logo -->
             <a href="<?php echo home_url(); ?>" class="flex items-center space-x-2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/disability-services_logo.png" alt="Qlinest Logo" class="h-14">
@@ -35,16 +34,12 @@
             ?>
 
             <!-- Contact Button -->
-            <a href="#contact" class="bg-green-500 text-white px-5 py-2 rounded-full font-medium hover:bg-yellow-400 hover:text-green-500 transition">
-             Contact Us
+            <a href="#contact" class="bg-blue-500 text-white px-5 py-2 rounded-full font-medium hover:bg-yellow-400 hover:text-green-500 transition">
+             Need Help? 
             </a>
 
         </nav>
     </div>
-
-
-
-
 <?php wp_footer(); ?>
 </body>
 </html>
