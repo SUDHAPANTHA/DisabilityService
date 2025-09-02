@@ -1,38 +1,33 @@
 <?php
+// Load Tailwind + Custom CSS
 function disabilityservices_enqueue_styles() {
-    // Tailwind CDN (for quick setup) — use compiled CSS for production
     wp_enqueue_style('tailwindcss', 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
-
-    // Your custom CSS (optional)
     wp_enqueue_style('main-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'disabilityservices_enqueue_styles');
+
+// Register Menus
 function disabilityservices_setup() {
     register_nav_menus([
         'primary' => __('Primary Menu', 'disabilityservices')
     ]);
 }
 add_action('after_setup_theme', 'disabilityservices_setup');
-// Handle contact form submission
+
+/* -----------------------
+   CONTACT FORM HANDLING
+----------------------- */
 function handle_contact_form() {
-    // Security check
     if (!isset($_POST['contact_form_nonce_field']) || !wp_verify_nonce($_POST['contact_form_nonce_field'], 'contact_form_nonce')) {
         wp_die('Security check failed!');
     }
 
-    // Sanitize input
     $first_name = sanitize_text_field($_POST['first_name']);
     $last_name  = sanitize_text_field($_POST['last_name']);
     $email      = sanitize_email($_POST['email']);
     $phone      = sanitize_text_field($_POST['phone']);
     $message    = sanitize_textarea_field($_POST['message']);
 
-    // Optional: Require user login
-    // if (!is_user_logged_in()) {
-    //     wp_die('You must be logged in to submit this form.');
-    // }
-
-    // Save to DB
     global $wpdb;
     $table = $wpdb->prefix . 'contact_messages';
     $wpdb->insert(
@@ -47,10 +42,8 @@ function handle_contact_form() {
         ]
     );
 
-    // Send email to admin
     wp_mail(get_option('admin_email'), 'New Contact Message', "Name: $first_name $last_name\nEmail: $email\nPhone: $phone\nMessage:\n$message");
 
-    // Redirect back with success
     wp_redirect(home_url('/contact-us?success=1'));
     exit;
 }
@@ -78,20 +71,22 @@ function create_contact_table() {
     dbDelta($sql);
 }
 add_action('after_switch_theme', 'create_contact_table');
-// Add Contact Messages Menu in WP Admin
+
+// Admin Menu for Contact Messages
 function contact_messages_menu() {
     add_menu_page(
-        'Contact Messages',        // Page title
-        'Contact Messages',        // Menu title
-        'manage_options',          // Capability
-        'contact-messages',        // Menu slug
-        'contact_messages_page',   // Callback function
-        'dashicons-email-alt',     // Icon
-        25                         // Position
+        'Contact Messages',
+        'Contact Messages',
+        'manage_options',
+        'contact-messages',
+        'contact_messages_page',
+        'dashicons-email-alt',
+        25
     );
 }
 add_action('admin_menu', 'contact_messages_menu');
-// Display the messages
+
+// Display Contact Messages
 function contact_messages_page() {
     global $wpdb;
     $table = $wpdb->prefix . 'contact_messages';
@@ -112,26 +107,23 @@ function contact_messages_page() {
                 </tr>
             </thead>
             <tbody>
-                <?php
-                if($messages) {
-                    foreach($messages as $msg) {
-                        echo '<tr>';
-                        echo '<td>'.esc_html($msg->id).'</td>';
-                        echo '<td>'.esc_html($msg->first_name).'</td>';
-                        echo '<td>'.esc_html($msg->last_name).'</td>';
-                        echo '<td>'.esc_html($msg->email).'</td>';
-                        echo '<td>'.esc_html($msg->phone).'</td>';
-                        echo '<td>'.esc_html($msg->message).'</td>';
-                        echo '<td>'.esc_html($msg->created_at).'</td>';
-                        echo '</tr>';
-                    }
-                } else {
-                    echo '<tr><td colspan="7" style="text-align:center;">No messages found.</td></tr>';
-                }
-                ?>
+                <?php if($messages): ?>
+                    <?php foreach($messages as $msg): ?>
+                        <tr>
+                            <td><?php echo esc_html($msg->id); ?></td>
+                            <td><?php echo esc_html($msg->first_name); ?></td>
+                            <td><?php echo esc_html($msg->last_name); ?></td>
+                            <td><?php echo esc_html($msg->email); ?></td>
+                            <td><?php echo esc_html($msg->phone); ?></td>
+                            <td><?php echo esc_html($msg->message); ?></td>
+                            <td><?php echo esc_html($msg->created_at); ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr><td colspan="7" style="text-align:center;">No messages found.</td></tr>
+                <?php endif; ?>
             </tbody>
         </table>
     </div>
     <?php
 }
-?>
