@@ -103,7 +103,10 @@ get_header();
             <p class="mt-6 text-white/80 max-w-md text-justify">
                 We provide companionship, social interaction, and short-term in-house respite care for families who need reliable support.
             </p>
-            <a href="<?php echo site_url('/services'); ?>" class="bg-[#31B744] px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">Back to Services</a>
+            <a href="<?php echo site_url('/service'); ?>" 
+               class="inline-block bg-green-700 text-white px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">
+                Back to Services
+            </a>
         </div>
 
         <div class="lg:w-1/2 flex justify-center">

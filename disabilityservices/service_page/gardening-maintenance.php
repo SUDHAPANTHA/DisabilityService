@@ -105,11 +105,10 @@ get_header();
             <p class="mt-6 text-white/80 max-w-md text-justify">
                 We can assist you by providing a home maintenance expert who will take proper care of your home and make your life safer and more pleasant.
             </p>
-            <div class="mt-8 flex items-center gap-4 flex-wrap">
-                <a href="<?php echo site_url('/services'); ?>" class="btn-custom">
-                   Back to Services
-                </a>
-            </div>
+            <a href="<?php echo site_url('/service'); ?>" 
+               class="inline-block bg-green-700 text-white px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">
+                Back to Services
+            </a>
         </div>
 
         <!-- Image -->

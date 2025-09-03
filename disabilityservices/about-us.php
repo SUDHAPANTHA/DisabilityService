@@ -34,14 +34,6 @@ get_header();
       <img src="<?php echo get_template_directory_uri(); ?>/images/about.jpg" 
            alt="Disability Support Services" 
            class="w-full h-auto object-cover transform transition duration-500 hover:scale-105" />
-      <button 
-        aria-label="Play Video" 
-        class="absolute inset-0 flex items-center justify-center text-white bg-black/30 hover:bg-black/50 transition rounded-3xl backdrop-blur-sm"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M8 5v14l11-7z" />
-        </svg>
-      </button>
     </div>
 
     <!-- Right Text Content -->
@@ -66,24 +58,28 @@ get_header();
   </div>
 
   <!-- Stats -->
-  <div class="mt-20 max-w-7xl mx-auto px-6 sm:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-    <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-      <h3 class="text-3xl font-bold text-gray-900">500+</h3>
-      <p class="text-sm font-medium text-gray-700">Participants Supported</p>
-    </div>
-    <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-      <h3 class="text-3xl font-bold text-gray-900">98%</h3>
-      <p class="text-sm font-medium text-gray-700">Client Satisfaction</p>
-    </div>
-    <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-      <h3 class="text-3xl font-bold text-gray-900">100%</h3>
-      <p class="text-sm font-medium text-gray-700">Person-Centred Care</p>
-    </div>
-    <div class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
-      <h3 class="text-3xl font-bold text-gray-900">10+</h3>
-      <p class="text-sm font-medium text-gray-700">Years of Experience</p>
-    </div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center max-w-7xl mx-auto px-6 sm:px-12 mt-20">
+  <div class="border-r border-white pr-4">
+    <h3 class="text-4xl font-bold text-white">120+</h3>
+    <p class="text-base font-medium text-white">Satisfied aged care and NDIS clients</p>
   </div>
+  <div class="border-r border-white px-4">
+    <h3 class="text-4xl font-bold text-white">🤝</h3>
+    <p class="text-base font-medium text-white">
+      Brokerage agreements with companies like LHI, MCS, and living choice
+    </p>
+  </div>
+  <div class="border-r border-white px-4">
+    <h3 class="text-4xl font-bold text-white">5,000+</h3>
+    <p class="text-base font-medium text-white">Care house provided</p>
+  </div>
+  <div class="px-4">
+    <h3 class="text-4xl font-bold text-white">10+</h3>
+    <p class="text-base font-medium text-white">Years of Service</p>
+  </div>
+</div>
+
 
   <!-- Curvy Bottom SVG -->
   <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
@@ -96,13 +92,14 @@ get_header();
 <!-- Extra Content Section -->
 <section class="py-20 bg-white text-center">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-primary mb-4">Our Mission</h2>
-    <p class="text-gray-700 text-lg mb-6">
-      We strive to create a world where every individual with disabilities has access to support, opportunities, and dignity.
-      Our programs are tailored to empower participants and foster inclusive communities.
+    <h2 class="text-3xl font-bold text-primary mb-4">Our Story</h2>
+    <p class="text-gray-700 text-lg mb-6 text-justify">
+          We enable and assist you to give an empowered life. Your independence and quality of life is what we strive for.
+          Disability service is a South Australian owned private aged care and disability services provider. We are dedicated to providing in-home care and support that are personalized. We provide safe environment where you can do more and live fulfilling life.
+          We work closely with you, your families and support network to tailor your care plan to promote independence and choice. We are passionate about working with you and being there for you.
     </p>
     <a href="<?php echo site_url('/contact'); ?>" class="inline-block px-6 py-3 btn-primary rounded-lg font-semibold transition">
-      Contact Us
+      Get Your Free Consultation
     </a>
   </div>
 </section>

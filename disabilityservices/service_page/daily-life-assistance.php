@@ -108,8 +108,8 @@ get_header();
             <p class="mt-6 text-white/80 max-w-md text-justify">
                 At Disability Service Adelaide, we aim to help you live the life you want. We understand everyone has different abilities and needs, so we offer a wide range of customized services to help you reach your goals.
             </p>
-            <a href="<?php echo site_url('/services'); ?>" 
-               class="inline-block bg-[#31B744] px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">
+            <a href="<?php echo site_url('/service'); ?>" 
+               class="inline-block bg-green-700 text-white px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">
                 Back to Services
             </a>
         </div>

@@ -30,7 +30,7 @@
         <a href="<?php echo site_url('/about-us'); ?>" class="block hover:underline">About Us</a>
         <a href="<?php echo site_url('/service'); ?>" class="block hover:underline">Services</a>
         <a href="<?php echo site_url('/contact'); ?>" class="block hover:underline">Contact Us</a>
-        <a href="<?php echo site_url('/team'); ?>" class="block hover:underline">Our Team</a>
+       
       </div>
 
       <!-- Empty column -->

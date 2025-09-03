@@ -22,7 +22,7 @@
                   <span class="text-white">Disability Service</span><br>
                    <span class="text-white py-4">Adelaide</span>
            </h1>
-            <p class="mt-6 text-white/80 max-w-md text-justify">
+            <p class="mt-6 text-white max-w-md text-justify">
             Our well-trained professionals are dedicated to providing the best care and support for individuals with disabilities. We focus on enhancing quality of life through personalized services, community engagement, and a commitment to excellence.
             </p>
             <div class="mt-8 flex items-center gap-4 flex-wrap">
@@ -57,7 +57,7 @@
     <!-- Wavy SVG Bottom -->
     <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="relative block w-full h-40">
-            <path fill="#ffffff" fill-opacity="1" d="M0,256 C360,160 1080,360 1440,224 L1440,320 L0,320 Z"></path>
+            <path fill="#f9fbff" fill-opacity="1" d="M0,256 C360,160 1080,360 1440,224 L1440,320 L0,320 Z"></path>
         </svg>
     </div>
 

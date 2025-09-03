@@ -103,9 +103,10 @@ get_header();
             <p class="mt-6 text-white/80 max-w-md text-justify">
                 We provide safe, reliable, and comfortable transport services to help you get where you need to be with ease and security.
             </p>
-            <a href="<?php echo site_url('/services'); ?>" class="bg-[#31B744] px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">Back to Services</a>
-        </div>
-
+            <a href="<?php echo site_url('/service'); ?>" 
+               class="inline-block bg-green-700 text-white px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">
+                Back to Services
+            </a>
         <div class="lg:w-1/2 flex justify-center">
             <div class="bg-gray-100 p-4 rounded-2xl">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/transport.jpg" alt="Transport Support" class="rounded-2xl shadow-lg max-w-md w-full">

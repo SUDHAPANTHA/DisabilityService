@@ -152,3 +152,9 @@ function contact_messages_page() {
     </div>
     <?php
 }
+function disabilityservices_theme_setup() {
+    add_theme_support('title-tag'); // Auto <title>
+    add_theme_support('post-thumbnails'); // Featured images
+    add_theme_support('custom-logo'); // Optional
+}
+add_action('after_setup_theme', 'disabilityservices_theme_setup');
