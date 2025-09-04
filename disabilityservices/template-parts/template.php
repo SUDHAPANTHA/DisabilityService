@@ -99,21 +99,31 @@
 </section>
 
 <script>
-  function animateNumber(id, target) {
+  function animateNumber(id, target, duration) {
     const element = document.getElementById(id);
-    let current = 0;
-    let increment = target / 200; // adjust speed
-    function update() {
-      current += increment;
-      if(current >= target){
-        current = 0; // reset for continuous loop
+    let start = 0;
+    let startTime = null;
+
+    function update(timestamp) {
+      if (!startTime) startTime = timestamp;
+      let progress = (timestamp - startTime) / duration;
+      let value = Math.min(Math.floor(progress * target), target);
+
+      element.innerText = value.toLocaleString() + '+';
+
+      if (value < target) {
+        requestAnimationFrame(update);
       }
-      element.innerText = Math.floor(current).toLocaleString() + '+';
-      requestAnimationFrame(update);
     }
+
     requestAnimationFrame(update);
   }
 
-  animateNumber('clients', 120);
-  animateNumber('hours', 5000);
+  // Run both animations slowly
+  animateNumber('clients', 120, 6000); // 6 seconds
+  animateNumber('hours', 5000, 10000); // 10 seconds
 </script>
+
+
+
+

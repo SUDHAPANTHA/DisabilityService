@@ -87,34 +87,79 @@
 
   <!-- Content -->
   <div style="max-width:1200px; margin:0 auto; text-align:center; color:#fff; font-size:1.25rem; font-weight:600; position:relative; z-index:2;">
-   Disability Support Services Australia (DSSA) is here to help you navigate the complexities of the F-1 visa process with ease and confidence.
+    Disability Support Services Adelaide (DSSA) is committed to providing high-quality care and assistance 
+    tailored to your individual needs. If you or your loved one require support, guidance, or have any questions, 
+    we are here to help. Please don’t hesitate to reach out to our friendly team for more information 
+    about our services and how we can assist you.
   </div>
 </section>
 
 <!-- Contact Info Section -->
-<section style="background:#f9fbff; padding:60px 0;">
-  <div style="max-width:1200px; margin:0 auto; padding:0 1.5rem;">
-    <h2 style="font-size:1.75rem; font-weight:700; margin-bottom:2rem; color:#111;">We’re here for you.</h2>
-    
-    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem;">
-      <div style="background:#fff; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:1.5rem;">
-        <p style="font-weight:600; margin-bottom:.5rem;">Location</p>
-        <p style="color:#4B5563;">55 Rellum Road Greenacres SA</p>
+<section class="bg-[#f9fbff] py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-12">
+      We’re here for you
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-300 text-center">
+      
+      <!-- Location -->
+      <div class="flex flex-col items-center p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          class="h-10 w-10 text-[#0065AC] mb-4" fill="none" 
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5s-3 1.343-3 3 1.343 3 3 3z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M12 22s8-4.5 8-10a8 8 0 10-16 0c0 5.5 8 10 8 10z" />
+        </svg>
+        <p class="font-semibold text-gray-900 mb-1">Location</p>
+        <p class="text-gray-600">55 Rellum Road, Greenacres SA</p>
       </div>
-      <div style="background:#fff; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:1.5rem;">
-        <p style="font-weight:600; margin-bottom:.5rem;">Office Hours</p>
-        <p style="color:#4B5563;">Monday - Friday: 9am - 5pm</p>
+
+      <!-- Office Hours -->
+      <div class="flex flex-col items-center p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          class="h-10 w-10 text-[#0065AC] mb-4" fill="none" 
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <p class="font-semibold text-gray-900 mb-1">Office Hours</p>
+        <p class="text-gray-600">Mon - Fri: 9am - 5pm</p>
       </div>
-      <div style="background:#fff; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:1.5rem;">
-        <p style="font-weight:600; margin-bottom:.5rem;">Email</p>
-        <p style="color:#4B5563;">info@disabbilityservicesadelaoide.com.au</p>
+
+      <!-- Email -->
+      <div class="flex flex-col items-center p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          class="h-10 w-10  mb-4" fill="none" 
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M16 12H8m8 0l-8-5m0 10l8-5M4 6h16v12H4z" />
+        </svg>
+        <p class="font-semibold text-gray-900 mb-1">Email</p>
+        <p class="text-gray-600 break-all text-center">
+          info@disabilityservicesadelaide.com.au
+        </p>
       </div>
-      <div style="background:#fff; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:1.5rem;">
-        <p style="font-weight:600; margin-bottom:.5rem;">Simple & easy form</p>
-        <p style="color:#4B5563;">Live Chat</p>
+
+      <!-- Live Chat -->
+      <div class="flex flex-col items-center p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          class="h-10 w-10 text-[#0065AC] mb-4" fill="none" 
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 
+            012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+        </svg>
+        <p class="font-semibold text-gray-900 mb-1">Support</p>
+        <p class="text-gray-600">Live Chat Available</p>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 

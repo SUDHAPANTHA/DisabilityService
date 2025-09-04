@@ -1,3 +1,6 @@
+
+
+
 <style>
     body {
         font-family: 'Inter', sans-serif;
@@ -33,11 +36,12 @@
 
             <!-- CTA Button -->
             <div class="mt-8 flex items-center gap-4 flex-wrap">
-                <a href="#book" 
-                   class="bg-green-700 text-[#1E73BE] px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">
-                    Explore Our Services
-                </a>
-            </div>
+             <a href="#book" 
+                  class="bg-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition duration-300">
+                  Explore Our Services
+             </a>
+           </div>
+
         </div>
 
         <!-- Right: Image -->

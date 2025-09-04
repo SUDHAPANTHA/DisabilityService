@@ -21,6 +21,12 @@ function disabilityservices_setup() {
 }
 add_action('after_setup_theme', 'disabilityservices_setup');
 
+add_action('after_setup_theme', function () {
+  register_nav_menus([
+    'primary' => __('Primary Menu', 'yourtheme'),
+  ]);
+});
+
 // ================================
 // Create Contact Messages Table
 // ================================

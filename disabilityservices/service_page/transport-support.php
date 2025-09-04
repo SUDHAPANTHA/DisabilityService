@@ -93,8 +93,11 @@ get_header();
 </style>
 
 <!-- Hero Section -->
+<!-- Hero Section -->
 <section class="relative pattern-bg text-white pb-32 overflow-hidden">
     <div class="max-w-6xl mx-auto px-8 mt-16 flex flex-col lg:flex-row items-center gap-12 relative z-10">
+        
+        <!-- Left Content -->
         <div class="lg:w-1/2">
             <h1 class="mt-6 text-4xl lg:text-5xl font-extrabold leading-tight">
                 <span class="text-[#31B744]">Transport</span><br>
@@ -103,23 +106,33 @@ get_header();
             <p class="mt-6 text-white/80 max-w-md text-justify">
                 We provide safe, reliable, and comfortable transport services to help you get where you need to be with ease and security.
             </p>
-            <a href="<?php echo site_url('/service'); ?>" 
+            <a href="<?php echo site_url('/services'); ?>" 
                class="inline-block bg-green-700 text-white px-6 py-3 mt-8 rounded-lg font-semibold hover:bg-yellow-500 transition">
                 Back to Services
             </a>
+        </div>
+
+        <!-- Right Image -->
         <div class="lg:w-1/2 flex justify-center">
-            <div class="bg-gray-100 p-4 rounded-2xl">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/transport.jpg" alt="Transport Support" class="rounded-2xl shadow-lg max-w-md w-full">
+            <div class="bg-gray-100 p-4 rounded-2xl shadow-lg">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/transport.jpg" 
+                     alt="Transport Support" 
+                     class="rounded-2xl max-w-md w-full object-cover">
             </div>
         </div>
     </div>
 
+    <!-- Curvy Bottom Shape -->
     <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" class="relative block w-full h-40">
-            <path fill="#ffffff" d="M0,256 C360,160 1080,360 1440,224 L1440,320 L0,320 Z"></path>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" 
+             preserveAspectRatio="none" class="relative block w-full h-40">
+            <path fill="#ffffff" 
+                  d="M0,224 C360,360 1080,120 1440,280 L1440,320 L0,320 Z">
+            </path>
         </svg>
     </div>
 </section>
+
 
 <!-- Info Section -->
 <section class="services-info py-16 px-6">

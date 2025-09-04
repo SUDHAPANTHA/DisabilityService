@@ -74,8 +74,7 @@
 
   <div class="relative max-w-7xl mx-auto px-6 text-center z-10">
     <span class="belief-badge">WHAT WE BELIEVE</span>
-
-    <h2 class="mt-6 text-3xl md:text-4xl font-extrabold leading-tight text-white">
+    <h2 class="mt-6 text-2xl md:text-4xl font-bold leading-tight text-white">
       Our values reflect our commitment to make a<br />
       positive difference in people’s lives and communities they live in.
     </h2>
